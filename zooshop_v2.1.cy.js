@@ -24,3 +24,4 @@ describe('Проверка раскрывающего меню',  () => {
         cy.get('.checkout-button').click();
       })
   })  
+  //asdasdas
