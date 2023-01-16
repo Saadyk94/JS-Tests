@@ -12,16 +12,16 @@ describe('Проверка раскрывающего меню',  () => {
         cy.get('[href="https://zooshop.online/product-category/preces-grauzejiem/"] > span').trigger('mouseover');
         cy.get('[href="https://zooshop.online/product-category/piederumi-akvarija-zivim/"] > span').trigger('mouseover');
         cy.get('#menu-item-11064 > a > span').trigger('mouseover');
+        cy.get('#menu-item-11064 > a > span').trigger('mouseover');
+        cy.get('[href="https://zooshop.online/product-category/bariba-kakiem-suniem-grauzejiem-putniem/"] > span').click();
         cy.get('#menu-item-3609 > [href="https://zooshop.online/product-category/suniem-metala-buri-matraci-transportesanas-kastes-somas-manezas/"] > span').click();
-        cy.get('.post-36967 > .desc > h4 > a').click();
-        cy.get('.single_add_to_cart_button')
-        .click()
-        .wait(5000);
-        cy.get('.icon-cancel').click();
-        cy.get('.top_bar_right_wrapper > #header_cart > .icon-basket')
-        .wait(5000)
-        .click();
-        cy.get('.checkout-button').click();
+        cy.get('[href="https://zooshop.online/product-category/kakiem/"] > span').click();
+        cy.get('[href="https://zooshop.online/product-category/preces-putniem/"] > span').click();
+        cy.get('[href="https://zooshop.online/product-category/preces-grauzejiem/"] > span').click();
+        cy.get('[href="https://zooshop.online/product-category/piederumi-akvarija-zivim/"] > span').click();
+        cy.get('#menu-item-11064 > a > span').click();
+        cy.get('.top_bar_right_wrapper > #header_cart > .icon-basket').click();
+        cy.get('.button').click();
+        cy.get('.logo-main').click();              
       })
   })  
-  //asdasdas
