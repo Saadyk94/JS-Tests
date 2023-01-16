@@ -1,4 +1,4 @@
-describe('Проверка коррекности навигации по сайту',  () => {
+describe('Проверка корректности навигации по сайту',  () => {
     it('ввод в работу раскрывающего меню сайта', () => {
         cy.visit('https://zooshop.online/');  
         cy.get('[title="Latviešu"] > :nth-child(1) > .wpml-ls-native').click();
